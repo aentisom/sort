@@ -1,13 +1,12 @@
 def myBubbleSort(theList):
 
-    j = len(theList) - 1
+    L = len(theList) - 1
     
-    for n in range(j):
+    for n in range(L):
         
-        for i in range(j - n):
+        for i in range(L - n):
             
             if theList[i] > theList[i + 1]:
                 theList[i],theList[i + 1] = theList[i + 1],theList[i]
                 
     return theList
-
