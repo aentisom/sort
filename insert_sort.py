@@ -20,5 +20,3 @@ def myInsertSort(theList):
 
                 
     return newList
-
-print(myInsertSort([5,4,3,2,1]))
