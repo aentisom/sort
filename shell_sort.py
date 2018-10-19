@@ -1,22 +1,3 @@
-'''
-def findMin(theList):#求最小数
-    minNum = theList[0]
-    flag = 0
-    for i in range(len(theList)):    
-        if minNum > theList[i]:
-            minNum = theList[i]
-            flag = i
-    return [minNum,flag]
-
-def ergodic(theList):#遍历排序(低效,已废弃)
-    newList = []
-    while len(theList) != 0:
-        theMin = findMin(theList)
-        newList.append (theMin[0])
-        del theList[theMin[1]] 
-    return newList
-'''
-
 import insert_sort
 
 
@@ -36,10 +17,8 @@ def myShell(the_list):#希尔排序
     L=len(the_list)
     
     for gap in gap_list:
-
         if gap == 1:
             return insert_sort.myInsertSort(the_list)
-        
         flag = 0#flag是分组的序号
         
         for i in range(gap):
