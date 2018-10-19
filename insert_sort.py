@@ -17,6 +17,5 @@ def myInsertSort(theList):
                 if newList[j] <= i and i <= newList[j + 1]:
                     newList.insert(j + 1,i)
                     break
-
                 
     return newList
