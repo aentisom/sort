@@ -10,9 +10,9 @@ def myInsertSort(theList):
         elif i >= newList[-1]:
             newList.append(i)
         else:
-            l = len(newList)
+            L = len(newList)
             
-            for j in range(l):
+            for j in range(L):
                 
                 if newList[j] <= i and i <= newList[j + 1]:
                     newList.insert(j + 1,i)
