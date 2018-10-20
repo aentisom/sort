@@ -12,7 +12,6 @@ def shellList(the_list):#希尔增量
     return shell_list
 
 def myShell(the_list):#希尔排序
-    
     gap_list=shellList(the_list)
     L=len(the_list)
     
